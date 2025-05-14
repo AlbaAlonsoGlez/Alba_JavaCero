@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones: ejercicio 4</title>
+    <script>
+        // Este script define tres funciones para multiplicar, elevar a potencia y sumar dos números
+        let multipli = function(x,y) // Multiplica x por y
+        {
+            return x*y;
+        }
+        let expon = function (x,y){ // Eleva x a la potencia y
+            return Math.pow(x, y);
+        }
+        let suma = (x,y) => {return x+y}; // Suma x y
+
+        var result = multipli(5,2); 
+        alert (result);     
+
+        result = suma (3,4);
+        alert (result);
+    </script>
+</head>
+<body>
+    <p>Crea tres funciones para multiplicar, elevar a potencia y sumar dos números, y muestra los resultados mediante alertas</p>
+</body>
+</html>

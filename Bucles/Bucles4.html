@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles: ejercicio 4</title>
+    <script>
+        function funcionUno() // Esta función genera etiquetas HTML de encabezado
+        {
+            let result="" 
+            let i;
+            for (i=1; i<=6; i++)
+            {
+                result = result + `<h${i}> Titulo ${i} </h>`; // Se genera la etiqueta HTML
+            }
+        document.getElementById("central").innerHTML= result;
+        }
+    </script>
+</head>
+<body>
+    <p>Pulsa el botón para crear HTML tags de la 1 a la 6</p>
+    <button onclick="funcionUno()">Pulsa aqui</button>
+</body>
+</html>

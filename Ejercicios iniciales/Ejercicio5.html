@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio1</title>
+    </head>
+<body>
+<p>Ejercicio para ver cómo pedir datos por teclado</p>
+
+<p>innerHtml controla que puede incluirse en un elemento.</p>
+<div id ="salida"></div> // Div donde se muestra el resultado
+
+<script>
+let dato, num; 
+
+dato = window.prompt("Introduce un número ?", "0"); num = parseInt(dato); // Se pide un número por teclado y se convierte a entero
+
+let resultado = num *2; // Se multiplica el número por 2
+
+document.getElementById("salida").innerHTML = (`El doble es ${resultado} `); // Se muestra el resultado en el div con id "salida"
+</script>
+
+</body>
+</html>

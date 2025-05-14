@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios: ejercicio 2</title>
+    <script>
+        function ProcesaDatos() {
+            // Se asigna el valor del input al elemento con id "resultado"
+            let objx = document.getElementById("RangoValor").value; document.getElementById("resultado").innerHTML = objx; 
+        }
+    </script>
+</head>
+
+<body>
+    <p>Entrada de datos por 'Slide'</p>
+    <input type="range" id="RangoValor" value="50" onchange="ProcesaDatos()">
+    <p id="resultado"></p>
+</body>
+
+</html>

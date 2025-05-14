@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios: ejercicio 1</title>
+    <script>
+        // Este script saluda al usuario tras este introducir su nombre
+        function saludo()
+        {
+            let nom_usuario = document.fdatos.entrada.value; // Captura el valor del campo de texto
+            document.writeln(`Hola, bon dia ${nom_usuario} `); // Muestra un mensaje en la página
+        }
+    </script>
+</head>
+<body>
+    <p>Formulario que saluda a un uusario tras este introducir su nombre</p>
+    <form name="fdatos">
+        Escribe tu nombre: 
+        <input type="text" size="10"  name="entrada"/> 
+        <input type="button" value="Pulsa aquí" onclick="saludo()"  /> // Botón que llama a la función saludo
+    </form>
+</body>
+</html>

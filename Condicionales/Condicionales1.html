@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales: ejercicio 1</title>
+    <script>
+        let dato1,dato2,num1, num2, resultado;
+        dato1 = window.prompt("Primer número?", "0"); // Se pide el primer número por teclado
+        num1 = parseInt(dato1); // Se convierte a entero
+        dato2 = window.prompt("Segundo número?", "0"); 
+        num2 = parseInt(dato2);
+        
+        if (num1 > num2)
+        {
+            resultado = " el primero"; // Se evalua si el primer número es mayor que el segundo
+        }
+        else
+        {
+            resultado = " el segundo"; // Se evalua si el segundo número es mayor que el primero
+        }
+        document.write(` <h3>El mayor es ${resultado}  </h3> `); // Se muestra el resultado en la página
+    </script>
+</head>
+<body>
+    <p>Ejercicio que pide dos números y muestra cuál es el mayor</p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones: ejercicio 2</title>
+    <script>
+        // Este script calcula el cuadrado de un número
+        function Calcula(numero=1)
+        {
+            let calculo = numero * numero; document.write(`<p/> Resultado = ${calculo} </p>`); // Muestra el resultado en la página
+        }
+    </script>
+</head>
+<body>
+    <p>Define una función en JavaScript que calcule el cuadrado de un número y muestre el resultado en la página al hacer clic en uno de los botones</p>
+    <input type="button" onclick="Calcula()" value="Calculo">
+    <input type="button" onclick="Calcula(5)" value="Otro Calculo ">
+</body>
+</html>

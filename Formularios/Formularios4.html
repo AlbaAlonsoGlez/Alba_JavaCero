@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios: ejercicio 4</title>
+    <script>
+        function calcula()
+        {
+            // Se evalua la expresión introducida en el campo de texto
+            let numero = document.fdatos.entrada.value; let dato = document.getElementById("lista");
+            // Se obtiene el elemento select
+            let valor = dato.options[lista.selectedIndex].value;
+            // Se obtiene el valor seleccionado
+            let resultado = numero * valor; document.getElementById("salida").innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <p>Código que a partir de un número y una opción seleccionada de un formulario, los multiplique y muestre el resultado en un elemento HTML con el id "salida"</p>
+</body>
+</html>

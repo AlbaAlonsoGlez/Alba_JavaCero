@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales: ejercicio 3</title>
+    <script>
+        let marca,modelo,descuento = 0; marca = prompt("Marca?", "0"); // Se pide la marca por teclado
+        modelo = prompt("Modelo?", "0"); // Se pide el modelo por teclado
+
+        if ((marca=="ford") && (modelo =="fiesta")) 
+        {
+            descuento = 5; // Se evalua si la marca es ford y el modelo fiesta
+        }
+
+        if ((marca=="ford") && (modelo =="focus"))
+        {
+            descuento = 10; // Se evalua si la marca es ford y el modelo focus
+        }
+
+        document.write(`<h3>Su descuento es ${descuento} </h3>`);
+    </script>
+</head>
+<body>
+    <p>Ejercicio que pide la marca y modelo de un coche y muestra el descuento correspondiente</p>
+</body>
+</html>

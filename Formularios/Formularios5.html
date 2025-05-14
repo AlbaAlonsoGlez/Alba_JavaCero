@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios: ejercicio 5</title>
+</head>
+<body>
+    <p>Calcula y muestra en consola la diferencia en días entre dos fechas seleccionadas en un formulario, usando la biblioteca Moment.js.</p>
+    <form>
+        <input type="date" id="start" onchange="getEventTime()">
+        <input type="date" id="end" onchange="getEventTime()">
+    </form>
+
+    <script>
+        var getEventTime = function(){
+            var start = moment(document.getElementById("start").value);  // Captura la fecha de inicio
+            var end = moment(document.getElementById("end").value); // Captura la fecha de fin
+            console.log(moment.duration(end.diff(start)).asDays()); // Calcula la diferencia en días
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles: ejercicio 6</title>
+    <script>
+        let fila;
+        let columna = parseInt(prompt("Introduce el tamaño del rombo: ", "0")); // Se pide el tamaño del rombo por teclado
+        // Se dibuja la parte superior del rombo
+        for (fila = 1; fila <= columna; fila++) { 
+            for (espacios = columna - fila; espacios > 0; espacios--) {
+                document.write("&nbsp&nbsp");
+            }
+            for (conta = 1; conta < (2 * fila); conta++) {
+                document.write("*");
+            }
+            document.writeln("<br>");
+        }
+        // Se dibuja la parte inferior del rombo
+        // Se inicia el bucle desde columna - 1 para evitar dibujar la línea central dos veces
+        for (fila = columna - 1; fila >= 1; fila--) {
+            for (espacios = columna - fila; espacios > 0; espacios--) {
+                document.write("&nbsp&nbsp");
+            }
+            for (conta = 1; conta < (2 * fila); conta++) {
+                document.write("*");
+            }
+            document.writeln("<br>");
+        }
+        
+</script>
+</head>
+<body>
+    <p>Ejercicio que pide un número y dibuja un rombo de asteriscos</p>
+</body>
+</html>

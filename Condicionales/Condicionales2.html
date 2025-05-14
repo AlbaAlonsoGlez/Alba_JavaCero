@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales: ejercicio 2</title>
+    <script>
+        let dato1, dato2, dato3, media; // Se declaran las variables
+        dato1 = parseInt(window.prompt("Primer número?", "0"));  
+        dato2 = parseInt(window.prompt("Segundo número?", "0")); 
+        dato3 = parseInt(window.prompt("Tercer número?", "0"));
+        media = (dato1 + dato2 + dato3)/3; // Se calcula la media de los tres números
+        
+        if (media >5)
+        {
+            resultado = " Suspendido"; // Se evalua si la media es mayor que 5
+        }
+        else
+        {
+            resultado = " Aprobado"; // Se evalua si la media es menor o igual a 5
+        }
+        document.write(`<h3>La nota final es ${resultado} </h3>`);
+
+    </script>
+</head>
+<body>
+    <p>Ejercicio que pide tres números y muestra si la media es mayor o menor que 5</p>
+</body>
+</html>

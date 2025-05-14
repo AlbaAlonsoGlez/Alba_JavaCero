@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales: ejercicio 5</title>
+    <script>
+        let edad, final; // Se declaran las variables
+        edad = prompt("edad?", "0"); // Se pide la edad por teclado
+
+        if (isNaN(edad)) {
+            final = "Error. No es un número"; // Se evalua si la edad no es un número
+        } else {
+            final = (edad < 18) ? "Demasiado joven" : "Mayor de edad"; // Se evalua si la edad es menor de 18
+        }
+        document.write(final);
+    </script>
+</head>
+<body>
+    <p>Ejercicio que pide la edad y muestra si es mayor o menor de edad</p>
+</body>
+</html>
